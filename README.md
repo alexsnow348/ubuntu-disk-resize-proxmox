@@ -81,4 +81,5 @@ lsblk
 
 - [Proxmox VE Documentation](https://pve.proxmox.com/wiki/Main_Page)
 - [Ubuntu Documentation](https://help.ubuntu.com/)
+- https://youtu.be/rhvRs84rN9I?si=cL5w-K_hOETJZdbP
 ```
