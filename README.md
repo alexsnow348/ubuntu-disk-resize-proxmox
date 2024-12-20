@@ -39,6 +39,7 @@ sudo apt install cloud-guest-utils
 4. Extend the partition (replace X with your partition number):
 ```bash
 sudo growpart /dev/sda X
+sudo parted /dev/sda3
 ```
 
 ### 3. Resize the Filesystem
@@ -51,7 +52,7 @@ sudo resize2fs /dev/sdaX
 #### For LVM setup:
 ```bash
 sudo pvresize /dev/sdaX
-sudo lvextend -l +100%FREE /dev/mapper/vg-name
+lvextend -r -l +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv
 sudo resize2fs /dev/mapper/vg-name
 ```
 
